@@ -57,7 +57,6 @@ instance FV Type where
   fv = everything Set.union (mkQ Set.empty go)
     where
       go (TyVar a) = Set.singleton a
-      go _ = Set.empty
 
 instance FV Schema where
   fv (Schema as t) = foldr Set.delete (fv t) as
