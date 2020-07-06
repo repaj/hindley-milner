@@ -8,6 +8,11 @@ copyright:           "2020 Konrad Kleczkowski"
 
 dependencies:
 - base >= 4.7 && < 5
+- containers
+- mtl
+- transformers
+- prettyprinter
+- syb
 
 ghc-options:
 - -Wall

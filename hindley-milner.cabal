@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 437e01c54d7723d62efe7323f8c07b94b1438a0849737fac8a413d8ae97fee50
+-- hash: ddc7ceac00f9d6023e3251053c0873d27d4d963eada75c494d0d402d527dc24f
 
 name:           hindley-milner
 version:        0.1.0.0
@@ -23,7 +23,9 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
+      Subst
+      Tree
+      TypeSystem
   other-modules:
       Paths_hindley_milner
   hs-source-dirs:
@@ -31,4 +33,9 @@ library
   ghc-options: -Wall -Werror -O
   build-depends:
       base >=4.7 && <5
+    , containers
+    , mtl
+    , prettyprinter
+    , syb
+    , transformers
   default-language: Haskell2010
