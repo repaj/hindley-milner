@@ -80,7 +80,6 @@ solve = foldl' go (Right emptySubst)
 data TypeError
   = UnboundType Name
   | UnifyError UnifyError
-  | CannotInfer Term
   deriving (Show)
 
 newtype TypeCheck a = TypeCheck { unTypeCheck :: RWST Context [Constraint] [Name] (Except TypeError) a }
