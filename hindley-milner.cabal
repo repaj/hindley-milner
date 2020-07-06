@@ -1,0 +1,34 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 437e01c54d7723d62efe7323f8c07b94b1438a0849737fac8a413d8ae97fee50
+
+name:           hindley-milner
+version:        0.1.0.0
+homepage:       https://github.com/repaj/hindley-milner#readme
+bug-reports:    https://github.com/repaj/hindley-milner/issues
+author:         Konrad Kleczkowski
+maintainer:     konrad.kleczkowski@gmail.com
+copyright:      2020 Konrad Kleczkowski
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+
+source-repository head
+  type: git
+  location: https://github.com/repaj/hindley-milner
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_hindley_milner
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Werror -O
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010

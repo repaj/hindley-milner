@@ -1,0 +1,19 @@
+name:                hindley-milner
+version:             0.1.0.0
+github:              "repaj/hindley-milner"
+license:             BSD3
+author:              "Konrad Kleczkowski"
+maintainer:          "konrad.kleczkowski@gmail.com"
+copyright:           "2020 Konrad Kleczkowski"
+
+dependencies:
+- base >= 4.7 && < 5
+
+ghc-options:
+- -Wall
+- -Werror
+
+library:
+  source-dirs: src
+  ghc-options:
+  - -O
